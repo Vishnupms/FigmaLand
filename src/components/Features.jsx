@@ -1,8 +1,14 @@
-import React from 'react'
+
 import shapes from '../assets/shapes.png'
+import ReactPlayer from 'react-player';
 import draw from '../assets/draw.png'
 import brush from '../assets/brush.png'
+import { useState } from 'react';
+import { Button } from '@mui/material';
+import VideoPlayer from './VideoPlayer';
+
 const Features = () => {
+
     const featureInfoData = [
         {
           image: shapes,
@@ -20,6 +26,7 @@ const Features = () => {
           text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
         },
       ];
+      
       return (
         <div className="feature-section-wrapper">
           <div className="feature-section-top">
@@ -41,6 +48,8 @@ const Features = () => {
             ))}
           </div>
           <div className='video-screen'>
+        
+        <VideoPlayer/>
 
           </div>
         </div>

@@ -1,13 +1,17 @@
+/* Import the "Inter" font CSS */
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   
 }
 img {
   max-width: 100%;
   height: auto;
+  margin-right: 100px;
 }
 .App {
   min-height: 100vh;
@@ -18,6 +22,7 @@ img {
 body {
   max-width: 100%;
   overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
   
 }
 
@@ -78,6 +83,7 @@ nav {
   z-index: -2;
   justify-content:center ;
   width: 100%; /* Make the background image full width */
+  animation: slideIn 1.5s ease;
 }
 .mobile-bannerImage-container{
   display: none;
@@ -96,18 +102,21 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 .primary-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   color: white;
   /* line-height: 5rem; */
   max-width: 600px;
   margin-left: 10px;
+  animation: fadeInSlideUp 1.5s ease ;
 }
 .primary-text {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.4rem);
   max-width: 500px;
   color: #6a6a6a;
   margin: 1.5rem 0rem;
+  animation: fadeInSlideUp 1.5s ease;
 }
 .secondary-button {
   padding: 1rem 2.5rem;
@@ -123,6 +132,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: enlargeAndFadeIn 1s ease 1s; /* 1s duration with 1s delay (starts after the image animation) */
+  animation-fill-mode: both; 
 }
 .secondary-button svg {
   margin-left: 0.75rem;
@@ -131,7 +142,8 @@ nav {
 .secondary-button:hover {
   background-color: #b60f92;
 }
-.about-section-container {
+
+/* .about-section-container {
   margin-top: 20rem;
   position: relative;
   display: flex;
@@ -152,17 +164,17 @@ nav {
   justify-content: center;
   display: flex;
   flex-direction: column;
-}
-.primary-subheading {
+} */
+/* .primary-subheading {
   font-weight: 700;
   color: #fe9e0d;
   font-size: 1.15rem;
-}
-.about-buttons-container {
+} */
+/* .about-buttons-container {
   margin-top: 2rem;
   display: flex;
-}
-.watch-video-button {
+} */
+/* .watch-video-button {
   margin-left: 2rem;
   background-color: transparent;
   outline: none;
@@ -176,8 +188,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.watch-video-button svg {
+} */
+/* .watch-video-button svg {
   font-size: 3rem;
   margin-right: 1rem;
 }
@@ -224,11 +236,11 @@ nav {
   font-size: 1.5rem;
   margin-right: 1.25rem;
   color: #585858;
-}
+} */
 /* .footer-section-one {
   border: 2px solid blue;
 } */
-.footer-section-two {
+/* .footer-section-two {
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -243,8 +255,8 @@ nav {
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
-}
-.testimonial-section-bottom {
+} */
+/* .testimonial-section-bottom {
   margin-top: 2rem;
   background-color: white;
   padding: 1.5rem 2rem;
@@ -265,15 +277,15 @@ nav {
   max-width: 500px;
   font-size: 1.1rem;
   margin: 2rem 0rem;
-}
-.testimonials-stars-container svg {
+} */
+/* .testimonials-stars-container svg {
   margin: 0rem 0.25rem;
   font-size: 1.5rem;
   color: #fe9e0d;
 }
 .testimonial-section-bottom h2 {
   margin-top: 1.5rem;
-}
+} */
 .feature-section-wrapper {
   margin-top: 15rem;
   display: flex;
@@ -281,6 +293,7 @@ nav {
   align-items: center; /* Center vertically */
 
 }
+
 .feature-section-top p {
   text-align: center;
   max-width: 600px !important;
@@ -319,23 +332,17 @@ nav {
   align-items: center;
   flex-wrap: wrap;
 }
-.feature-section-info p {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
+
 .video-screen{
-  background-color: #fff;
   border-radius: 20px;
-  padding: 100px 60px;
-  width: 70%;
-  height: 400px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-  margin: 0 auto; /* Center horizontally within the parent container */
-  top: 50px;
+  justify-content: center;
+  margin-left: 0px;
+  width: 80%;
+  height: auto ;
+  
+
 }
+
 
 @media (max-width: 1000px) {
   .navbar-links-container a {
@@ -398,34 +405,34 @@ nav {
     padding: 0.8rem 2rem;
     cursor: pointer;
   }
-  .about-section-container {
+  /* .about-section-container {
     margin-top: 5rem !important;
   }
   .about-buttons-container {
     justify-content: center;
     flex-direction: column;
-  }
-  .primary-subheading {
+  } */
+  /* .primary-subheading {
     text-align: center;
   }
   .watch-video-button {
     margin-left: 0rem !important;
     margin-top: 1rem;
     font-size: 1rem !important;
-  }
-  .watch-video-button svg {
+  } */
+  /* .watch-video-button svg {
     margin-right: 0.5rem !important;
-  }
-  .about-section-image-container {
+  } */
+  /* .about-section-image-container {
     margin-right: 0rem !important;
-  }
+  } */
   .feature-section-wrapper {
     margin-top: 5rem !important;
   }
   .feature-section-bottom {
     margin-top: 1rem !important;
   }
-  .contact-form-container {
+  /* .contact-form-container {
     padding: 0.5rem !important;
     flex-direction: column;
     justify-content: center;
@@ -438,8 +445,8 @@ nav {
     padding: 0.5rem 1rem !important;
     margin-bottom: 0.8rem !important;
     text-align: center;
-  }
-  .footer-wrapper {
+  } */
+  /* .footer-wrapper {
     flex-direction: column;
   }
   .footer-section-two {
@@ -448,7 +455,7 @@ nav {
   }
   .footer-section-columns {
     margin: 1rem 0rem;
-  }
+  } */
   .App {
     max-width: 95vw;
   }
@@ -461,9 +468,46 @@ nav {
   .mobile-bannerImage-container{
     position:absolute;
     display: flex;
-   top: -90px;
+   top: -150px;
     z-index: -2;
     width: 100vw;
-   
+    animation: slideIn 1.5s ease;
+  }
+  .feature-section-wrapper {
+    margin-top: 20rem !important;
+  }
+
+  .video-screen {
+    height: auto;
+    position: relative;
+  }
+  
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%); /* Start off the screen above */
+  }
+  to {
+    transform: translateY(0); /* End at its original position */
+  }
+}
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0; /* Start with opacity 0 (fully transparent) */
+    transform: translateY(20px); /* Start 20px below its original position */
+  }
+  100% {
+    opacity: 1; /* End with opacity 1 (fully visible) */
+    transform: translateY(0); /* End at its original position */
+  }
+}
+@keyframes enlargeAndFadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 (fully transparent) */
+    transform: scale(0.8); /* Start at 80% of its original size */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 (fully visible) */
+    transform: scale(1); /* End at its original size */
   }
 }
