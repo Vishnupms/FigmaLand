@@ -1,0 +1,144 @@
+/* top section */
+.feature-section-wrapper {
+    margin-top: 14rem;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+  
+  }
+  
+  .feature-section-top p {
+    text-align: center;
+    max-width: 600px !important;
+  }
+  .feature-section-top h1 {
+    max-width: 700px !important;
+    color: black;
+  }
+  .feature-section-top {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .feature-section-info {
+    width: 290px;
+    min-height: 350px;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    color: #505050;
+    margin: 1rem 1rem;
+  }
+  .feature-section-info h2 {
+    margin: 1rem 0rem;
+  }
+  .feature-section-bottom {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .video-screen{
+    margin-top: 3rem;
+    border-radius: 20px;
+    justify-content: center;
+    margin-left: 100px;
+    width: 80%;
+    height: auto ;
+    
+  
+  }
+  .info-boxes-img-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    margin-left: 70px;
+    align-items: center; /* Centers content vertically */
+  }
+
+  .bottom-container {
+    margin-top: 39rem; /* Adjust the margin-top as needed for responsiveness */
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the column order on smaller screens */
+  }
+  
+  .bottom-banner-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    justify-content: space-between; /* Add space between the two sections */
+    align-items: center; /* Center the items vertically */
+  }
+  
+  .bottom-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; /* Reduce the padding for smaller screens */
+    text-align: center;
+    margin: 0 20px; /* Add horizontal margin for spacing on smaller screens */
+    align-items: center; /* Center the items horizontally */
+  }
+  
+  .bottom-text-heading {
+    font-size: 2rem; /* Reduce the font size for smaller screens */
+    max-width: 100%; /* Remove the max-width to allow full-width text */
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  .bottom-text-section button {
+    margin-top: 10px; /* Add top margin for spacing */
+  }
+  .news-letter {
+    margin-top: 8rem; /* Add top margin for spacing */
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    justify-content: space-between; /* Add space between the two sections */
+    align-items: center; /* Center the items vertically */
+  }
+  .newsletter-text-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; /* Reduce the padding for smaller screens */
+    text-align: center;
+    
+    align-items: center; /* Center the items horizontally */
+  }
+  
+  .bottom-image-section img,
+  .newsletter-image-section img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto;
+  }
+  
+  /* Media query for smaller screens (adjust the breakpoint as needed) */
+  @media (max-width: 768px) {
+    .bottom-container {
+      margin-top: 2rem; /* Adjust margin for smaller screens */
+    }
+    .video-screen{
+        display: none;
+    }
+  
+    .bottom-text-heading {
+      font-size: 1.5rem; /* Further reduce font size for smaller screens */
+    }
+  
+    .bottom-banner-container {
+      flex-direction: column; /* Stack sections on top of each other */
+    }
+  
+    .bottom-text-section {
+      margin: 20px 0; /* Remove horizontal margin, add vertical margin */
+    }
+  }
+  

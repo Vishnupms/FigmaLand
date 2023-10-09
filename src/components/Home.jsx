@@ -4,7 +4,7 @@ import mobileBackground from "../assets/rectangle-9-mobile.png";
 
 
 import Navbar from "./NavBar";
-import { FiArrowRight } from "react-icons/fi";
+
 
 const Home = () => {
   return (

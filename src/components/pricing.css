@@ -1,0 +1,131 @@
+/* src/components/PricingCards.css */
+.pricing-section-wrapper {
+    margin-top: 7rem;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    background-color: rgba(37,43,66);
+  
+  }
+  
+  .pricing-section-top {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pricing-section-top p {
+    text-align: center;
+    max-width: 600px !important;
+  }
+  .pricing-section-top h1 {
+    max-width: 700px !important;
+    color: #fff;
+  }
+  
+/* Apply basic styling */
+/* src/components/PricingCards.css */
+/* src/components/PricingCards.css */
+
+/* Apply basic styling */
+/* src/components/PricingCards.css */
+
+/* src/components/PricingCards.css */
+
+/* Apply basic styling */
+/* src/components/PricingCards.css */
+
+/* Apply basic styling */
+/* src/components/PricingCards.css */
+
+/* Apply basic styling */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on small screens */
+    
+  }
+  
+  .pricing-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    max-width: 300px; /* Limit the width of each card */
+    max-height: 600px; /* Limit the height of each card */
+  }
+  
+  .center-card {
+    width: 320px; /* Slightly bigger width for the center card */
+    height: 550px; /* Slightly bigger height for the center card */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #2091f9;
+  }
+  
+  /* Increase the height for the first card */
+  .pricing-card:first-child {
+    max-height: 500px;
+    height:500px
+  }
+  
+  /* Increase the height for the last card */
+  .pricing-card:last-child {
+    max-height: 500px;
+    height:500px
+  }
+  
+  .pricing-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .pricing-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .price {
+    font-size: 60px; /* Increase the font size for the number */
+    font-weight: 1000; /* Make the number extra bold */
+  }
+  
+  .price:before {
+    content: "$"; /* Add the dollar sign before the number */
+    font-size: 20px; /* Adjust the font size of the dollar sign */
+    display: block; /* Display the dollar sign on a separate line */
+    margin-bottom: -20px; /* Move the dollar sign up to overlap with the number */
+    margin-left: -2px;
+
+  }
+  
+  .center-card h2,.center-card P,.center-card .price {
+    color: white;
+  }
+
+  
+  
+
+  
+  .button.highlighted {
+    background-color: #ff6b6b; /* Change to your desired highlighted color */
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .pricing-cards {
+      flex-direction: column; /* Stack cards one below the other on small screens */
+    }
+  
+    .center-card {
+      width: 100%; /* Full width for the center card on small screens */
+    }
+  }
+  
