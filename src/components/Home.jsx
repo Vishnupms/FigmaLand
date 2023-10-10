@@ -1,9 +1,7 @@
 import React from "react";
 import BannerBackground from "../assets/bg.png";
 import mobileBackground from "../assets/bg-mobile.png";
-
-
-import Navbar from "./NavBar";
+import Navbar from "./Navbar";
 
 
 const Home = () => {
