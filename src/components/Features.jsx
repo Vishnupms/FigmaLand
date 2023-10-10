@@ -37,6 +37,9 @@ const Features = () => {
               elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
             </p>
           </div>
+            <div className='mobile-screen'> 
+        <VideoPlayer/>
+          </div>
           <div className="feature-section-bottom">
             {featureInfoData.map((data) => (
               <div className="feature-section-info" key={data.title}>
@@ -54,18 +57,18 @@ const Features = () => {
         <div className="bottom-container">
       <div className="bottom-banner-container">
         <div className="bottom-text-section">
-          <h1 className="bottom-text-heading" style={{textAlign:"start"}}>
+          <h1 className="primary-heading" style={{textAlign:"start"}}>
             Fastest way to Organize 
           </h1>
           <p className="primary-text" style={{textAlign:"start"}}>
           Most calendars are designed for teams. Slate is designed for freelancers
           </p>
           <button className="secondary-button">
-            Order Now 
+            Try For Free
           </button>
         </div>
         <div className="bottom-image-section">
-          <img src={mac} alt="" style={{width:"450px"}} />
+          <img src={mac} alt=""  />
         </div>
     </div>
   </div>

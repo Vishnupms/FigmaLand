@@ -6,7 +6,7 @@ const PricingCards = () => {
   return (
     <div className="pricing-section-wrapper">
     <div className="pricing-section-top">
-      <h1 className="primary-heading">Features</h1>
+      <h1 className="primary-heading">Pricing</h1>
       <p className="primary-text">
         Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
         elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.

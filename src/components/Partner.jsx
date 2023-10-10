@@ -43,13 +43,29 @@ const Partner = () => {
       text: "Client Name"
     },
   ];
+
+  const partnerMobile = [
+    {
+      image: google,
+      text: "Client Name"
+    },
+    {
+      image: amazon,
+      text: "Client Name"
+    },
+    {
+      image: microsoft,
+      text: "Client Name"
+    },
+
+
+  ]
   return (
     <div className="partner-section-wrapper">
       <div className="partner-section-top">
-        <h1 className="primary-heading">Partner</h1>
+        <h1 className="primary-heading">Partners</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        Most calendars are designed for teams. Slate is designed for freelancers
         </p>
       </div>
       <div className="partner-section-bottom">
@@ -65,10 +81,21 @@ const Partner = () => {
             </div>
           </div>
         ))}
-        
+          {partnerMobile.map((data) => (
+         <div className="partner-section-info-mobile" key={data.text}>
+            <div className="partner-img-container">
+               <p>{data.text}</p>
+              <img
+                src={data.image}
+                alt=""
+                className="partner-img"
+              />
+            </div>
+          </div>
+            ))}
       </div>
-      <button className="secondary-button">
-            Try For Free{" "}
+      <button className="secondary-button" style={{marginTop:"50px"}}>
+            Try For Free
           </button>
     </div>
   );

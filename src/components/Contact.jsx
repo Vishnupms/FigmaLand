@@ -27,15 +27,15 @@ const Contact = () => {
       <h2 className="form-heading">Contact Us</h2>
       <form>
         <div className="form-group">
-          <label htmlFor="name">Your Name</label>
+          <label htmlFor="name"></label>
           <input type="text" id="name" name="name" placeholder="Your Name" />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Your Email</label>
+          <label htmlFor="email"></label>
           <input type="email" id="email" name="email" placeholder="Your Email" />
         </div>
         <div className="form-group">
-          <label htmlFor="message">Your Message</label>
+          <label htmlFor="message"></label>
           <textarea
             id="message"
             name="message"
@@ -54,6 +54,10 @@ const Contact = () => {
         <div className="feature-image-section">
         <div className="contact-info-icons">
         <div className="contact-info">
+          <img src={location} alt="" />
+          <p>Location: 123 Main St, City</p>
+        </div>
+        <div className="contact-info">
           <img src={phone} alt="" />
           <p>Phone: +1 (123) 456-7890</p>
         </div>
@@ -61,14 +65,13 @@ const Contact = () => {
           <img src={mail} alt="" />
           <p>Email: example@example.com</p>
         </div>
-        <div className="contact-info">
-          <img src={location} alt="" />
-          <p>Location: 123 Main St, City</p>
+       
         </div>
-        </div>
-   
-          <img src={social} alt="" />
-          <img src={map} alt="" style={{width:"340px",height:"230px",marginLeft:"100px"}} />
+          <div className='map'>
+
+          <img src={map} alt="" style={{width:"350px",height:"230px"}} />
+          </div>
+          <img src={social} alt="" style={{alignItems:"start"}}/>
         </div>
       </div>
     </div>
