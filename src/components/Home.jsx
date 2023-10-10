@@ -1,6 +1,6 @@
 import React from "react";
-import BannerBackground from "../assets/rectangle-9.png";
-import mobileBackground from "../assets/rectangle-9-mobile.png";
+import BannerBackground from "../assets/bg.png";
+import mobileBackground from "../assets/bg-mobile.png";
 
 
 import Navbar from "./NavBar";
