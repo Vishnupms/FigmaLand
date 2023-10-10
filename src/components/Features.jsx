@@ -57,10 +57,10 @@ const Features = () => {
         <div className="bottom-container">
       <div className="bottom-banner-container">
         <div className="bottom-text-section">
-          <h1 className="primary-heading" style={{textAlign:"start"}}>
+          <h1 className="primary-heading" style={{textAlign:"start",marginLeft:"60px"}}>
             Fastest way to Organize 
           </h1>
-          <p className="primary-text" style={{textAlign:"start"}}>
+          <p className="primary-text" style={{textAlign:"start",marginLeft:"20px"}}>
           Most calendars are designed for teams. Slate is designed for freelancers
           </p>
           <button className="secondary-button">
@@ -77,15 +77,18 @@ const Features = () => {
           <img src={newsletter} alt="" style={{width:"450px"}} />
         </div>
         <div className="newsletter-text-section">
-          <h1 className="newsletter-heading">
+          <h1 className="primary-heading">
            Lightning fast prototyping
           </h1>
-          <p >
+          <div className='para-text' style={{marginTop:"20px"}}>
+
+          <p style={{fontWeight:"bold"}}>
            Subscribe to our Newsletters
           </p>
-          <p >
+          <p className='primary-text'>
            Available exclusively on figmaland
           </p>
+          </div>
           <button className="secondary-button">
             Order Now 
           </button>

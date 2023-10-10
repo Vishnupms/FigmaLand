@@ -50,13 +50,15 @@
     display: none;
   }
 
-  .video-screen{
+  .video-screen {
     margin-top: 3rem;
     border-radius: 20px;
     justify-content: center;
     margin-left: 100px;
     width: 80%;
-    height: auto ;
+    height: auto;
+    position: relative; /* Ensure the video screen doesn't create a new stacking context */
+    z-index: 0; /* Lower the video screen's z-index */
   }
   .info-boxes-img-container {
     display: flex;
@@ -126,7 +128,7 @@
   /* Media query for smaller screens (adjust the breakpoint as needed) */
   @media (max-width: 768px) {
     .bottom-container {
-      margin-top: 2rem; /* Adjust margin for smaller screens */
+      margin-top: 3rem; /* Adjust margin for smaller screens */
     }
     .video-screen{
         display: none;
@@ -146,7 +148,7 @@
       padding: 0;
     }
    .info-boxes-img-container{
-    margin-top: 12rem;
+    margin-top: 15rem;
    
    }
    .bottom-image-section{

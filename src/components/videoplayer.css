@@ -1,24 +1,52 @@
 /* VideoPlayer.module.css (or your preferred naming convention) */
 
 .video-container {
-    position: relative;
-    width: 100%;
-   
-    margin-left: 50px;
-    align-items: center;
-    
-  }
-  
-  .video-container .video {
-    position: absolute;
-    border-radius: 20px;
-    top: 0;
-    left: 0px;
-    width: 80%;
-    height: auto;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.55);
-  }
+  position: relative;
+  width: 100%;
+  margin-left: 50px;
+  align-items: center;
+  display: inline-block; /* Added to center button horizontally */
+  z-index: 1; /* Ensure the button is below the video screen */
+}
 
-  
+.video-container .video {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0px;
+  width: 80%;
+  height: auto;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.55);
+  z-index: 0; /* Lower the video's z-index */
+}
 
-  
+.watch-video-button {
+  position: absolute;
+  top: 50%; /* Position button vertically in the center */
+  left: 50%; /* Position button horizontally in the center */
+  transform: translate(-50%, -50%); /* Center button perfectly */
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #087deb;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch-video-button svg {
+  font-size: 8rem;
+  margin-right: 12rem;
+  margin-top: 28rem;
+}
+
+@media (max-width: 768px) {
+  .watch-video-button{
+    display: none;
+  }
+}

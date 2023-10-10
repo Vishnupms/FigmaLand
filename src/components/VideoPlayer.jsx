@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import './videoplayer.css'
 import video from '../assets/Figmaland.mp4'
 import thumbnail from '../assets/screen.png'
+import { BsFillPlayCircleFill } from "react-icons/bs";
 
 const VideoPlayer = () => {
   const videoRef = useRef(null);
@@ -29,12 +30,9 @@ const VideoPlayer = () => {
       Your browser does not support the video tag.
     </video>
     {!isPlaying && (
-      <div className="play-button" onClick={togglePlay}>
-        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="25" cy="25" r="20" fill="transparent" stroke="#fff" strokeWidth="3" />
-          <polygon points="15,15 15,35 35,25" fill="#fff" />
-        </svg>
-      </div>
+       <button className="watch-video-button" onClick={togglePlay}>
+       <BsFillPlayCircleFill /> 
+     </button>
     )}
   </div>
   

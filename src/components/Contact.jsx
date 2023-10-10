@@ -53,7 +53,7 @@ const Contact = () => {
         </div>
         <div className="feature-image-section">
         <div className="contact-info-icons">
-        <div className="contact-info">
+           <div className="contact-info">
           <img src={location} alt="" />
           <p>Location: 123 Main St, City</p>
         </div>
