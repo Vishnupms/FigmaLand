@@ -167,4 +167,9 @@
       margin: 20px 0; /* Remove horizontal margin, add vertical margin */
     }
   }
+  @media (max-width: 1000px) {
+   .video-screen{
+    width: 100%;
+   }
+  }
   

@@ -13,7 +13,7 @@ const Home = () => {
           <img src={mobileBackground} alt="" />
         </div>
         <div className="home-bannerImage-container">
-          <img src={BannerBackground} alt="" />
+          <img src={BannerBackground} alt="" className="banner-image" />
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
